@@ -13,6 +13,7 @@ def fizzbuzz(num):
     print(f"{num}: buzz") 
   elif num % 3==0: # edit this line
     print(f"{num}: fizz") 
+
 for i in range(1, 20):
   fizzbuzz(i)
 

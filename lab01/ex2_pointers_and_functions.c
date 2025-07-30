@@ -5,9 +5,9 @@ void add_one(int input) {
 }
 
 // TODO: create a pointer to input
-void add_one_pointer(______ input) {
+void add_one_pointer(int * input) {
   // TODO: add one to the integer that input points to
-  ________ += 1;
+  *input += 1;
 }
 
 int main() {
@@ -17,16 +17,13 @@ int main() {
   // Call add_one on x
   add_one(x);
 
-  // This line should print 5
-  // Why doesn't this work?
   printf("add_one: %d\n", x);
-
   // Let's try using add_one_pointer
 
   // TODO: use add_one_pointer to increment x
   // Hint: compare the type of x with the type of the argument
   //       for add_one_pointer
-  add_one_pointer(______);
+  add_one_pointer(&x);
 
   // This line should print 6
   printf("add_one_pointer: %d\n", x);

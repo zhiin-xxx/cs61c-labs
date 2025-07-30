@@ -27,7 +27,15 @@ main:
 # The return value should be stored in a0
 factorial:
     # YOUR CODE HERE
-
+    addi t0,x0,1; #t0
+    addi t1,x0,1;
+    beq a0, x0, end_factorial  # 如果 a0 == 0，直接返回 1
+MUL:
+    mul t0,t0,t1;
+    add t1,t1,1;
+    ble t1,a0,MUL;
+end_factorial:
+    mv a0,t0;
     # This is how you return from a function. You'll learn more about this later.
     # This should be the last line in your program.
     jr ra

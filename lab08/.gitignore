@@ -604,4 +604,3 @@ unit-test-*.snk
 # Project 4
 convolve_*
 !src/io.o
-tests/
